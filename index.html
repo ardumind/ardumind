@@ -4,36 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="icon" type="image/x-icon" href="fplogo.png">
+    <link rel="icon" type="image/x-icon" href="logo/ardumind8.png">
 
-    <title>Proyectos de fol robótica</title>
+    <title>Ardumind</title>
 
     <style>
-        
-        /*formato texto*/
-        h1{
-            margin: 5px;
+        /*reset*/
+        *{
+            margin: 0px;
+            padding: 0px;
         }
-        h2{
+
+        /*formato texto*/
+        h1, h2, p{
             margin: 5px;
         }
         p{
             font-size: 20px;
-            margin: 5px;
         }
 
         /*cajas*/
         body{
             margin: 0px;
-            /*cursor:url(mini-mojardin.png), auto;*/
+
+            cursor:url(mini-mojardin.png), auto;
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            background-image: url(media/pexels-pachon-in-motion.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
+
         /*mi parte favorita de la peli de flexbox es cuando
         flexbox dice: "it's flex box time" y se pone a flexboxear
         por toda la pantalla*/
         header{
-            border: 1px solid;
-            background-color: black;
+            border: 0px solid;
+            background-color:rgb(0, 35, 37);
             color: white;
 
             display: flex;
@@ -50,9 +59,8 @@
         }
         
         main{
-            
-
             border: 0px solid;
+            background-color:hsl(208, 100%, 97%, 55%);
 
             max-width: 1000px;
             margin-left: auto;
@@ -76,6 +84,12 @@
 
         .proyecto{
             display: flex;
+            margin-left: 10%;
+            margin-right: 10%;
+
+            /*ARREGLAR NAVEGACIÓN CON HEADER*/
+            /*cgpt: cuando hagas scroll hasta este elemento, deja un margen arriba de 150px*/
+            scroll-margin-top: 170px;
         }
 
     </style>
@@ -83,59 +97,63 @@
 <body id="top">
     <header>
         <section>
-            <h1>Proyectos de fol</h1>
+            <h1>Ardumind 4 kids</h1>
             <p>Somos uno de los grupos del alumnado de 2º de robótica del CIFP Avilés. En esta página podrás encontrar todos nuestros proyectos.</p>
+            <p>¡Manos a la tech!</p>
 
+            <section id="menu">
+            <button>indice</button>
+            <button>tareas de fol</button>
+        </section>
         </section>
         
-        <img src="fplogo.png" height="130px">
+        <img src="logo/ardumind7.png" height="150px">
     </header>
 
     <main>
-        <!--poner el # del índice en la sección anterior para que funcione mientras no encuentre algo mejor-->
-        <nav id="p1">
+        <nav id="indice">
             <h2>Índice de navegación</h2>
-            <p><img src="gestion-de-proyectos.png" height="20px"><a href="#p1">Proyecto 1</a></p>
-            <p><img src="gestion-de-proyectos.png" height="20px"><a href="#p2">Proyecto 2</a></p>
-            <p><img src="gestion-de-proyectos.png" height="20px"><a href="#p3">Proyecto 3</a></p>
-            <p><img src="gestion-de-proyectos.png" height="20px"><a href="#p4">Proyecto 4</a></p>
+            <p><img src="media/gestion-de-proyectos.png" height="20px"><a href="#p1">Proyecto 1</a></p>
+            <p><img src="media/gestion-de-proyectos.png" height="20px"><a href="#p2">Proyecto 2</a></p>
+            <p><img src="media/gestion-de-proyectos.png" height="20px"><a href="#p3">Proyecto 3</a></p>
+            <p><img src="media/gestion-de-proyectos.png" height="20px"><a href="#p4">Proyecto 4</a></p>
         </nav>
         
         <section>
-            <section id="p2" class="proyecto" style="border: 1px solid;">
+            <section id="p1" class="proyecto" style="border: 1px solid;">
                 <article>
                     <h2>proyecto 1</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nemo libero perferendis, ab, quaerat cumque, et sapiente provident fugit optio itaque vitae officia praesentium adipisci recusandae ipsum harum odio. Praesentium.</p>
                     <p><a href="https://www.folcifpaviles.org/ipe-ii">link</a></p>
                 </article>
-                <img src="fplogo.png" style="max-height: 200px;">
+                <img src="logo/ardumind7.png" style="max-height: 200px;">
             </section>
 
-            <section id="p3" class="proyecto">
+            <section id="p2" class="proyecto">
                 <article>
                     <h2>proyecto 2</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nemo libero perferendis, ab, quaerat cumque, et sapiente provident fugit optio itaque vitae officia praesentium adipisci recusandae ipsum harum odio. Praesentium.</p>
                     <p><a href="https://www.folcifpaviles.org/ipe-ii">link</a></p>
                 </article>
-                <img src="fplogo.png" style="max-height: 200px;">
+                <img src="logo/ardumind7.png" style="max-height: 200px;">
             </section>
 
-            <section id="p4" class="proyecto">
+            <section id="p3" class="proyecto">
                 <article>
                     <h2>proyecto 3</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nemo libero perferendis, ab, quaerat cumque, et sapiente provident fugit optio itaque vitae officia praesentium adipisci recusandae ipsum harum odio. Praesentium.</p>
                     <p><a href="https://www.folcifpaviles.org/ipe-ii">link</a></p>
                 </article>
-                <img src="fplogo.png" style="max-height: 200px;">
+                <img src="logo/ardumind7.png" style="max-height: 200px;">
             </section>
 
-            <section id="p5" class="proyecto">
+            <section id="p4" class="proyecto">
                 <article>
                     <h2>proyecto 4</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nemo libero perferendis, ab, quaerat cumque, et sapiente provident fugit optio itaque vitae officia praesentium adipisci recusandae ipsum harum odio. Praesentium.</p>
                     <p><a href="https://www.folcifpaviles.org/ipe-ii">link</a></p>
                 </article>
-                <img src="fplogo.png" style="max-height: 200px;">
+                <img src="logo/ardumind7.png" style="max-height: 200px;">
             </section>
         </section>
         
@@ -147,7 +165,7 @@
     <footer>
         <section>
             <h2>Página de proyectos de fol</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <p>Imagen de fondo: pachon-in-motion (plexels)</p>
             <p><a href="#top">volver arriba</a></p>
         </section>
     </footer>
