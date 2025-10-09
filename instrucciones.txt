@@ -1,0 +1,13 @@
+CREAR CARPETA:
+- create new file
+- poner en su nombre: nombrecarpeta/nombrearchivo
+- eso crea automáticamente una carpeta
+- añadir cosas a la carpeta
+- borrar archivo creado
+a github no le gustan las carpetas vacías
+
+BORRAR ARCHIVO:
+- seleccionar archivo
+- menú 3 puntos a la derecha arriba
+- delete file
+- commit changes!!!
