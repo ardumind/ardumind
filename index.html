@@ -7,167 +7,85 @@
     <link rel="icon" type="image/x-icon" href="logo/ardumind8.png">
 
     <title>Ardumind</title>
+    <link rel="stylesheet" href="style.css">
 
-    <style>
-        /*reset*/
-        *{
-            margin: 0px;
-            padding: 0px;
-        }
-
-        /*formato texto*/
-        h1, h2, p{
-            margin: 5px;
-        }
-        p{
-            font-size: 20px;
-        }
-
-        /*cajas*/
-        body{
-            margin: 0px;
-
-            cursor:url(mini-mojardin.png), auto;
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-            background-image: url(media/pexels-pachon-in-motion.jpg);
-            background-attachment: fixed;
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        /*mi parte favorita de la peli de flexbox es cuando
-        flexbox dice: "it's flex box time" y se pone a flexboxear
-        por toda la pantalla*/
-        header{
-            border: 0px solid;
-            background-color:rgb(0, 35, 37);
-            color: white;
-
-            display: flex;
-            justify-content: center;
-
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 10px;
-
-            position: sticky;
-            top: 0px;
-            left: 0px;
-        }
-        
-        main{
-            border: 0px solid;
-            background-color:hsl(208, 100%, 97%, 55%);
-
-            max-width: 1000px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 10px;
-        }
-
-        footer{
-            border: 1px solid;
-
-            width: 80%;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 10px;
-        }
-
-        nav, article{
-            margin-bottom: 20px;
-        }
-
-        .proyecto{
-            display: flex;
-            margin-left: 10%;
-            margin-right: 10%;
-
-            /*ARREGLAR NAVEGACIÓN CON HEADER*/
-            /*cgpt: cuando hagas scroll hasta este elemento, deja un margen arriba de 150px*/
-            scroll-margin-top: 170px;
-        }
-
-    </style>
 </head>
-<body id="top">
-    <header>
-        <section>
-            <h1>Ardumind 4 kids</h1>
-            <p>Somos uno de los grupos del alumnado de 2º de robótica del CIFP Avilés. En esta página podrás encontrar todos nuestros proyectos.</p>
-            <p>¡Manos a la tech!</p>
+<body>
 
-            <section id="menu">
-            <button>indice</button>
-            <button>tareas de fol</button>
-        </section>
-        </section>
+    <!--IGUAL PARA TODAS LAS PÁGINAS!!!-->
+    <header>
+        <!--menú-->
+        <ul class="menu">
+            <li class="lista-menu">
+                <div class="boton-menu">
+                    <svg viewBox="0 -19.04 75.804 75.804" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Group_67" data-name="Group 67" transform="translate(-798.203 -587.815)"> <path id="Path_59" data-name="Path 59" d="M798.2,589.314a1.5,1.5,0,0,1,2.561-1.06l33.56,33.556a2.528,2.528,0,0,0,3.564,0l33.558-33.556a1.5,1.5,0,1,1,2.121,2.121l-33.558,33.557a5.53,5.53,0,0,1-7.807,0l-33.56-33.557A1.5,1.5,0,0,1,798.2,589.314Z" fill="#ffffff"></path> </g> </g></svg>
+                </div>
+                    
+                <ul class="desplegable">
+                    <div>
+                    <li><a href="#">Introducción</a></li>
+                    <li><a href="actividades1.html">Actividades Ud. 1</a></li>
+                    </div>
+                </ul>
+            </li>
+        </ul>
         
-        <img src="logo/ardumind7.png" height="150px">
+        <!--header-->
+        <div>
+            <h1>Ardumind 4 kids</h1>
+            <p class="texto-menu">Somos uno de los grupos del alumnado de 2º de robótica del CIFP Avilés. En esta página podrás encontrar todos nuestros proyectos.</p>
+            <p class="logo-menu">¡Manos a la tech!</p>
+        </div>
+        <!--imagen header-->
+        <img class="img-menu" src="logo/ardumind7.png">
+
+        <!--img static-->
+        <div class="img-static">
+            <img height="100px" src="logo/ardumind8.png">
+        </div>
     </header>
 
+    <!--TEXTO CONCRETO DE CADA PÁGINA-->
     <main>
-        <nav id="indice">
-            <h2>Índice de navegación</h2>
-            <p><img src="media/gestion-de-proyectos.png" height="20px"><a href="#p1">Proyecto 1</a></p>
-            <p><img src="media/gestion-de-proyectos.png" height="20px"><a href="#p2">Proyecto 2</a></p>
-            <p><img src="media/gestion-de-proyectos.png" height="20px"><a href="#p3">Proyecto 3</a></p>
-            <p><img src="media/gestion-de-proyectos.png" height="20px"><a href="#p4">Proyecto 4</a></p>
-        </nav>
         
-        <section>
-            <section id="p1" class="proyecto" style="border: 1px solid;">
-                <article>
-                    <h2>proyecto 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nemo libero perferendis, ab, quaerat cumque, et sapiente provident fugit optio itaque vitae officia praesentium adipisci recusandae ipsum harum odio. Praesentium.</p>
-                    <p><a href="https://www.folcifpaviles.org/ipe-ii">link</a></p>
-                </article>
-                <img src="logo/ardumind7.png" style="max-height: 200px;">
-            </section>
+        <!--plantilla
+        <div class="parrafo">
+            <div class="texto-parrafo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut at recusandae impedit repudiandae cupiditate repellat dicta ratione quae iusto odio maiores voluptatem ab beatae vel illum eveniet exercitationem, nulla molestiae?</p>
+            </div>
+            <img src="media/fplogo.png" height="100px">
+        </div>-->
 
-            <section id="p2" class="proyecto">
-                <article>
-                    <h2>proyecto 2</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nemo libero perferendis, ab, quaerat cumque, et sapiente provident fugit optio itaque vitae officia praesentium adipisci recusandae ipsum harum odio. Praesentium.</p>
-                    <p><a href="https://www.folcifpaviles.org/ipe-ii">link</a></p>
-                </article>
-                <img src="logo/ardumind7.png" style="max-height: 200px;">
-            </section>
+        <div class="parrafo titulo">
+            <div class="texto-parrafo">
+                <h2>¿Quiénes somos?</h2>
+                <hr>
+            </div>
+        </div>
 
-            <section id="p3" class="proyecto">
-                <article>
-                    <h2>proyecto 3</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nemo libero perferendis, ab, quaerat cumque, et sapiente provident fugit optio itaque vitae officia praesentium adipisci recusandae ipsum harum odio. Praesentium.</p>
-                    <p><a href="https://www.folcifpaviles.org/ipe-ii">link</a></p>
-                </article>
-                <img src="logo/ardumind7.png" style="max-height: 200px;">
-            </section>
+        <div class="parrafo">
+            <div class="texto-parrafo">
+                <h2>Bienvenidos a Ardumind</h2>
+                <p>En Ardumind creemos que la mejor forma de aprender es jugando, explorando y creando. Nuestro proyecto combina tecnología, diseño y educación para acercar la robótica a los niños y niñas de una manera divertida y accesible.</p>
+            </div>
+            <img src="logo/ardumind8.png" height="150px">
+        </div>
 
-            <section id="p4" class="proyecto">
-                <article>
-                    <h2>proyecto 4</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nemo libero perferendis, ab, quaerat cumque, et sapiente provident fugit optio itaque vitae officia praesentium adipisci recusandae ipsum harum odio. Praesentium.</p>
-                    <p><a href="https://www.folcifpaviles.org/ipe-ii">link</a></p>
-                </article>
-                <img src="logo/ardumind7.png" style="max-height: 200px;">
-            </section>
-        </section>
+        <div class="parrafo">
+            <div class="texto-parrafo">
+                <h2>¿Qué es Ardumind?</h2>
+                <p>Ardumind es una iniciativa que utiliza placas Arduino y piezas impresas en 3D para crear juguetes educativos interactivos. Cada uno de nuestros kits está diseñado para que los niños puedan armar, programar y comprender los principios básicos de la robótica, la electrónica y la programación.</p>
+                <p>Nuestro objetivo es despertar la curiosidad científica y fomentar el pensamiento lógico, la creatividad y el trabajo en equipo desde una edad temprana.</p>
+            </div>
+        </div>
+
+        <div class="parrafo especial">
+            <div class="texto-parrafo">
+                <h2>Únete a la revolución educativa</h2>
+                <p>¡Acompáñanos en este viaje para inspirar a la próxima generación de mentes creativas y tecnológicas!</p>
+            </div>
+        </div>
         
-        
-
-
     </main>
-
-    <footer>
-        <section>
-            <h2>Página de proyectos de fol</h2>
-            <p>Imagen de fondo: pachon-in-motion (plexels)</p>
-            <p><a href="#top">volver arriba</a></p>
-        </section>
-    </footer>
 </body>
 </html>
